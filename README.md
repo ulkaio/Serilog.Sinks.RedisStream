@@ -31,7 +31,7 @@ The Serilog configuration is code first configuration as seen below.
 
 ```csharp
     var config = new RedisStreamSinkConfiguration{
-                RedisConnectionString="localhost:6739",
+                RedisConnectionString="localhost:6379",
                 RedisStreamName = "ExampleApp" };
 
     Log.Logger = new LoggerConfiguration()
